@@ -8,6 +8,9 @@
         * {
             padding: 0;
             margin: 0;
+        }
+
+        body {
             font-family: Arial, Helvetica, sans-serif;
             word-break: keep-all;
         }
@@ -17,17 +20,16 @@
             height: 100vh;
             background-image: url(./image/intro.jpg);
             text-align: center;
-            color: antiquewhite;
+            color: white;
         }
 
         #intro h1 {
-            /* padding-top: 1000vh; */
-            font-size: 60px;
+            padding-top: 10vh;
+            font-size: 70px;
         }
 
-        #intro h1 {
-            padding-top: 5vh;
-            font-size: 60px;
+        #intro p {
+            font-size: 20px;
         }
 
         #story {
@@ -54,19 +56,22 @@
 
         .background a {
             display: inline-block;
-            margin: 160px 20px;
+            margin: 180px 20px;
             padding: 30px;
-            background-color: gray;
-            border: 8px solid black;
-            color: white;
-            font-size: 40px;
+            border: 4px solid black;
+            backdrop-filter: blur(10px);
+            color: black;
+            font-size: 35px;
             text-decoration: none;
+            transition: all 0.4s ease;
+        }
+
+        .background a:hover {
+            box-shadow: 0 0 30px 0px black;
         }
 
         .description {
             padding: 100px 10%;
-            background-color: black;
-            color: aliceblue;
             font-size: 20px;
             line-height: 2;
         }
@@ -76,36 +81,62 @@
 <body>
     <div id="intro" class="background">
         <h1>서울시민</h1>
-        <p>서울살이 9년차</p>
+        <p>서울살이 7년차</p>
     </div>
 
     <div class="description">
-        <p>안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. </p>
-        <p>안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. </p>
-        <p>안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. </p>
-        <p>안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. </p>
-        <p>안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. </p>
+        <p>제 이름은 최시민입니다</p>
+        <br>
+        <p>대학 진학을 위해 서울에 올라왔고</p>
+        <p>직장인인 지금도 서울에서 살고 있습니다</p>
+        <br>
+        <p>서울에 살고 나서는</p>
+        <p>더 이상 고향 사투리를 쓰지 않습니다</p>
+        <p>더 이상 높은 빌딩에 놀라지 않습니다</p>
+        <p>더 이상 지하철이 어렵지 않습니다</p>
+        <p>더 이상 서울을 상상하지 않습니다</p>
+        <br>
+        <p>두 번째 고향 서울에서</p>
+        <p>저는 서울시민으로 살아갑니다</p>
     </div>
     <div id="story" class="background">
         <a href="https://brunch.co.kr/@@fTvJ">서울시민의 이야기 보러가기</a>
     </div>
 
     <div class="description">
-        <p>안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. </p>
+        <p>저는 개발자입니다</p>
+        <br>
+        <p>저에게 개발은 멋진 일입니다</p>
+        <p>무에서 유를 만들어내기 때문입니다</p>
+        <br>
+        <p>대학 시절 자율주행 대회를 위해 배운 개발은</p>
+        <p>이젠 손에 익은 기술이 되어 제 일상을 책임집니다</p>
+        <br>
+        <p>항상 더 나은 프로그램을 만들 수 있길 원합니다</p>
+        <p>그래서 꾸준히 고민하고, 공부하고, 새로움을 찾습니다</p>
+        <br>
+        <p>공부하며 정리한 내용을 기술 블로그에 공유하고 있습니다</p>
+        <p>개발자라면 한 번 방문해보세요</p>
     </div>
     <div id="tech" class="background">
-        <a href="https://tech.seoulsimin.com">서울시민의 기술 보러가기</a>
+        <a href="https://tech.seoulsimin.com"><span></span>서울시민의 기술 보러가기</a>
     </div>
 
     <div class="description">
-        <p>안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. </p>
+        <p>제 취미는 창작입니다</p>
+        <br>
+        <p>장르를 가리지 않고, 시 쓰기를 특별히 좋아합니다</p>
+        <p>바라보고 느껴왔던 세상을 저의 방식으로 표현합니다</p>
+        <br>
+        <p>내면의 세계를 엿보세요</p>
     </div>
     <div id="art" class="background">
         <a href="">서울시민의 작품 보러가기</a>
     </div>
-
     <div class="description">
-        <p>안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. </p>
+        <h2>Contact</h2>
+        <p><b>Email</b> choesimin961009@gmail.com</p>
+        <p><b>GitHub</b> https://github.com/choesimin</p>
     </div>
 </body>
 
