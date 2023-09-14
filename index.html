@@ -76,7 +76,7 @@
             padding-bottom: 100px;
             padding-left: 10px;
             padding-right: 10px;
-            font-size: 20px;
+            font-size: 18px;
             text-align: center;
             line-height: 2;
         }
@@ -135,6 +135,20 @@
         <p><b>Email</b> choesimin961009@gmail.com</p>
         <p><b>GitHub</b> https://github.com/choesimin</p>
     </div>
+
+
+    <script>
+        const isMobile = () => {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        };
+
+        if (isMobile()) {
+            for (bg of document.getElementsByClassName('bg')) {
+                bg.style.backgroundAttachment = 'scroll';
+            }
+        }
+    </script>
+
 </body>
 
 </html>
