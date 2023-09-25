@@ -105,14 +105,20 @@
         <br>
         <p>서울로 올라와서 대학교를 졸업하고 직장에 다니고 있습니다.</p>
         <br>
+        <br>
         <p>서울에 살고 나서 변한 것들이 있습니다.</p>
         <br>
-        <p>사투리를 쓰지 않고, 높은 빌딩을 보고 놀라워 하지 않습니다.</p>
-        <p>지하철의 내선 순환과 외선 순환을 이해하고, 노선 몇 개를 외웠습니다.</p>
-        <p>홍대와 이태원으로 서울의 모습을 상상하지 않습니다.</p>
+        <p>사투리를 쓰지 않게 되었습니다.</p>
+        <p>가끔 전시회를 보러 갑니다.</p>
+        <p>높은 빌딩 사이를 아늑하게 느낍니다.</p>
+        <p>자주 타는 노선 몇 개를 외웠습니다.</p>
+        <p>홍대에서 노는 것이 특별하지 않습니다.</p>
         <br>
-        <p>익숙해진 서울이 왠지 더 낯설게 느껴집니다.</p>
-        <p>서울과 함께, 서울시민으로 살아갑니다.</p>
+        <p>이젠 서울의 모습을 상상하지 않습니다.</p>
+        <br>
+        <br>
+        <p>익숙해진 서울이 왠지 더 낯섭니다.</p>
+        <p>서울에서, 서울시민으로 살아갑니다.</p>
     </div>
     <div id="story" class="bg">
         <a href="https://brunch.co.kr/@@fTvJ">서울시민의 이야기 보러가기</a>
@@ -122,7 +128,7 @@
         <h1>기술</h1>
         <br>
         <p>대학 시절, 자율주행 대회를 준비하기 위해 잠깐 배워봤던 프로그래밍은</p>
-        <p>이젠 손에 익은 기술이 되어 저의 삶을 지탱합니다.</p>
+        <p>이젠 손에 익은 기술이 되어 제 삶을 지탱합니다.</p>
         <br>
         <p>무에서 유를 만들어내는 개발은 멋진 일입니다.</p>
         <p>더 나은 개발자가 되길 바라며, 고민하고, 공부하고, 새로운 것에 도전합니다.</p>
@@ -193,7 +199,7 @@
             return chars;
         }
 
-        function type(element, text) {
+        function type(element, text, interval) {
             let charUnits = [];
 
             text = text.split('');
@@ -218,12 +224,16 @@
                     clearInterval(typing);
                     return;
                 }
-            }, 150);
+            }, interval);
         }
-        
+
         const intro = document.getElementById('intro');
-        type(intro.getElementsByTagName('h1')[0], '서울시민');
-        type(intro.getElementsByTagName('p')[0], '서울살이 7년차');
+        setTimeout(() => {
+            type(intro.getElementsByTagName('h1')[0], '서울시민', 100);
+        }, 500);
+        setTimeout(() => {
+            type(intro.getElementsByTagName('p')[0], '서울살이 7년차', 80);
+        }, 2000);
     </script>
 
 </body>
